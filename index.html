@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./imgaes/favicon.png">
+</head>
+<body>
+    <!-- card carousal -->
+    <div class="card">
+        <div class="carousal">
+            <img class="item" src="./imgaes/pizza6.jpg" alt="">
+            <img class="item" src="./imgaes/burger2.jpg" alt=" ">
+            <img class="item" src="./imgaes/ice4.jpg " alt=" ">
+            <img class="item active" src="./imgaes/burger3.jpg " alt=" ">
+        </div>
+
+        <div class="btns">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </div>
+    <!-- Product Filter -->
+    <div class="control">
+        <div class="btn-group">
+            <button class="btn btn-clicked" data-filter="all">All</button>
+            <button class="btn" data-filter="cake">Cake</button>
+            <button class="btn" data-filter="ice">Ice Cream</button>
+            <button class="btn" data-filter="pizza">Pizza</button>
+            <button class="btn" data-filter="burger">Burger</button>
+        </div>
+
+        <div class="input">
+        <input type="text" id="search" placeholder="Search Food">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box" data-item="burger">
+            <img src="./imgaes/burger4.jpg" alt="">
+        </div>
+        <div class="box" data-item="cake">
+            <img src="./imgaes/cake1.jpg" alt="">
+        </div>
+        <div class="box" data-item="ice">
+            <img src="./imgaes/ice6.jpg" alt="">
+        </div>
+        <div class="box" data-item="pizza">
+            <img src="./imgaes/pizza1.jpg" alt="">
+        </div>
+
+
+        <div class="box" data-item="burger">
+            <img src="./imgaes/burger2.jpg" alt="">
+        </div>
+        <div class="box" data-item="cake">
+            <img src="./imgaes/cake2.jpg" alt="">
+        </div>
+        <div class="box" data-item="ice">
+            <img src="./imgaes/ice7.jpg" alt="">
+        </div>
+        <div class="box" data-item="pizza">
+            <img src="./imgaes/pizza5.jpg" alt="">
+        </div>
+
+
+        <div class="box" data-item="burger">
+            <img src="./imgaes/burger3.jpg" alt="">
+        </div>
+        <div class="box" data-item="cake">
+            <img src="./imgaes/cake6.jpg" alt="">
+        </div>
+        <div class="box" data-item="ice">
+            <img src="./imgaes/ice3.jpg" alt="">
+        </div>
+        <div class="box" data-item="pizza">
+            <img src="./imgaes/pizza3.jpg" alt="">
+        </div>
+        
+        
+        <div class="box" data-item="burger">
+            <img src="./imgaes/burger1.jpg" alt="">
+        </div>
+        <div class="box" data-item="cake">
+            <img src="./imgaes/cake4.jpg" alt="">
+        </div>
+        <div class="box" data-item="ice">
+            <img src="./imgaes/ice4.jpg" alt="">
+        </div>
+        <div class="box" data-item="pizza">
+            <img src="./imgaes/pizza4.jpg" alt="">
+        </div>
+        
+
+        <div class="box" data-item="burger">
+            <img src="./imgaes/burger5.jpg" alt="">
+        </div>
+        <div class="box" data-item="cake">
+            <img src="./imgaes/cake5.jpg" alt="">
+        </div>
+        <div class="box" data-item="ice">
+            <img src="./imgaes/ice5.jpg" alt="">
+        </div>
+        <div class="box" data-item="pizza">
+            <img src="./imgaes/pizza1.jpg" alt="">
+        </div>
+
+        <div class="box" data-item="ice">
+            <img src="./imgaes/ice2.jpg" alt="">
+        </div>
+        <div class="box" data-item="cake">
+            <img src="./imgaes/cake3.jpg" alt="">
+        </div>
+        <div class="box" data-item="ice">
+            <img src="./imgaes/ice1.jpg" alt="">
+        </div>
+        <div class="box" data-item="pizza">
+            <img src="./imgaes/pizza6.jpg" alt="">
+        </div>
+
+    </div>
+<!-- Loader GIF -->
+    <div class="loader">
+        <img src="./imgaes/loader.gif" alt="loader">
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

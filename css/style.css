@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 22px;
+}
+body{
+    background-color: #353b48;
+    padding: 1rem;
+}
+
+/* Carousal */
+.card .item,
+.hidden {
+    display: none;
+}
+
+.card .carousal .active {
+    display: block;
+    animation: fade 0.9s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.card {
+    position: relative;
+    height: 400px;
+}
+.card .carousal img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 95%;
+    border-radius: 5px;
+}
+.btns {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 9px;
+    line-height: 1;
+    color: red;
+    opacity: 0.8;
+    background-color: rgba(2, 2, 2, 0.1);
+    border: none;
+}
+
+
+/* Porduct_Filter */
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 1rem;
+    margin-top: 20px;
+}
+.box{
+    height: 8rem;
+    border: 5px solid white;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s linear;
+    transform-origin: center;
+}
+.box img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.box:hover{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.66);
+}
+
+.control{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 80px 0px;
+    align-items: center;
+    height: 100px;
+    margin-top: 50px;
+}
+.btn-group button{
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: 3px solid #e12d4b;
+    border-radius: 5px;
+    background-color: #e12d4b;
+    color: white;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.btn-group button:hover,
+.btn-group .btn-clicked{
+    background-color: transparent;
+}
+#search{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 2px solid #e12d4b;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 0.6rem;
+}
+.input{
+position: relative;
+
+}
+.fa-search{
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    color: gray;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.loader{
+    width: 100%;
+    padding: 0px;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+.loader img{
+    height: 200px;
+    width: 300px;
+    transition: all 0.3s linear;
+}
